@@ -25,8 +25,9 @@ export default function ProjectItem({ data }: { data: any }) {
       <Image
         src={cover}
         alt={title}
-        width="100%"
-        height="50%"
+        width="100"
+        height="50"
+        style={{ width: "100%", height: "50%" }}
         layout="responsive"
         objectFit="cover"
         quality={100}
@@ -35,8 +36,18 @@ export default function ProjectItem({ data }: { data: any }) {
         <h1 className="text-2xl font-bold">{title}</h1>
         <p className="my-4 text-m">{description}</p>
         <div className=" flex gap-5">
-          <Link href={github} className="rounded-md px-2 py-1 border border-slate-700">Github</Link>
-          <Link href={"https://google.com"} className="rounded-md px-2 py-1 border border-slate-700">Web Link</Link>
+          <Link
+            href={github}
+            className="rounded-md px-2 py-1 border border-slate-700"
+          >
+            Github
+          </Link>
+          <Link
+            href={"https://google.com"}
+            className="rounded-md px-2 py-1 border border-slate-700"
+          >
+            Web Link
+          </Link>
         </div>
         <p className="mt-4 text-md">
           {startDate} ~ {endDate}{" "}
