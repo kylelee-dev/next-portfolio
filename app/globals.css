@@ -41,3 +41,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.project-card {
+  @apply flex flex-col md:m-3 rounded-xl w-full
+  transition duration-300 transform border border-gray-300 w-full
+  hover:scale-105 hover:shadow-lg 
+  dark:border-gray-200/50
+  dark:hover:shadow-gray-400/40
+}
